@@ -1,0 +1,16 @@
+<?php
+$error='Could not connect';
+$mysql_host='localhost';
+$mysql_user='root';
+$mysql_pass='';
+
+if(!@mysql_connect($mysql_host,$mysql_user,$mysql_pass)|| !@mysql_select_db('quiz2') )
+{
+echo $error;
+}
+else
+{
+echo 'Connected<br>';
+	
+}
+?>
